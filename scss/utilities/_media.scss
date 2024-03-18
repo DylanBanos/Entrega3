@@ -1,0 +1,132 @@
+@media only screen and (min-width:321px){
+    .barra{
+        height: 70px;
+    }
+    .subasta-index{
+        text-align: center;
+    }
+}
+
+@media only screen and (min-width:666px){
+    .barra{
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.5em;
+        p{
+            padding: 20px;
+        }
+    }
+    .subasta-index{
+        height: 150px;
+    }
+}
+
+@media only screen and (min-width:480px){
+    .m-artistas{
+        .c-artistas{
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: repeat(5, 230px);
+        }
+    }
+}
+
+@media only screen and (min-width:768px){
+    .m-artistas{
+        .c-artistas{
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: repeat(5, 300px);
+        }
+    }
+}
+
+@media only screen and (min-width:900px){
+    .m-artistas{
+        .c-artistas{
+            grid-template-columns:1fr 1fr 1fr;
+            grid-template-rows: repeat(5, 500px);
+        }
+    }
+}
+
+@media only screen and (min-width:480px){
+    .catalogo{
+        .s-catalogo{
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: repeat(5, 400px);
+        }
+    }
+}
+
+@media only screen and (min-width:768px){
+    .catalogo{
+        .s-catalogo{
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: repeat(5, 600px);
+        }
+    }
+}
+
+@media only screen and (min-width:900px){
+    .catalogo{
+        .s-catalogo{
+            grid-template-columns: 600px 600px;
+            grid-template-rows: repeat(5, 800px);
+            justify-content: center;
+        }
+    }
+}
+
+@media only screen and (min-width:480px){
+    .m-subasta{
+        .s-subasta{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: repeat(5, 400px);
+            padding: 5px;
+            gap: 10px;
+            .s-img{
+                .sub-img{
+                    height: 340px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width:900px){
+    .m-subasta{
+        .s-subasta{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: repeat(5, 600px);
+            padding: 5px;
+            gap: 10px;
+            .s-img{
+                .sub-img{
+                    height: 560px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width:1200px){
+    .m-subasta{
+        .s-subasta{
+            display: grid;
+            grid-template-columns: 450px 450px;
+            grid-template-rows: repeat(5, 600px);
+            justify-content: center;
+            align-items: center;
+            padding: 5px;
+            gap: 20px;
+            .s-img{
+                .sub-img{
+                    height: 560px;
+                }
+            }
+        }
+    }
+}

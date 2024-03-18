@@ -1,0 +1,197 @@
+.m-artistas{
+    .c-artistas{
+        width: 100%;
+        height: auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(16, 230px);
+        gap: 5px;
+        padding: 20px;
+        .artistas{
+            border: 2px solid rgb(255, 255, 255);
+            border-radius: 10px;
+            background-position: center;
+            background-size: cover;
+        }
+        .artista1{
+            background-image: url(../img/artista-1.webp);
+            display: flex;
+            align-items: flex-end;
+            p{
+                @extend %font;
+                background-color: rgba(18, 17, 18, 0.70);
+                color: white;
+                padding: 5px;
+                border-radius: 10px;
+            }
+        }
+        .artista2{
+            background-image: url(../img/artista-2.webp);
+            display: flex;
+            align-items: flex-end;
+            p{
+                @extend %font;
+                background-color: rgba(18, 17, 18, 0.70);
+                color: white;
+                padding: 5px;
+                border-radius: 10px;
+            }
+        }
+        .artista3{
+            background-image: url(../img/artista-3.webp);
+            display: flex;
+            align-items: flex-end;
+            p{
+                @extend %font;
+                background-color: rgba(18, 17, 18, 0.70);
+                color: white;
+                padding: 5px;
+                border-radius: 10px;
+            }
+        }
+        .artista4{
+            background-image: url(../img/artista-4.webp);
+            display: flex;
+            align-items: flex-end;
+            p{
+                @extend %font;
+                background-color: rgba(18, 17, 18, 0.70);
+                color: white;
+                padding: 5px;
+                border-radius: 10px;
+            }
+        }
+        .artista5{
+            background-image: url(../img/artista-5.webp);
+            display: flex;
+            align-items: flex-end;
+            p{
+                @extend %font;
+                background-color: rgba(18, 17, 18, 0.70);
+                color: white;
+                padding: 5px;
+                border-radius: 10px;
+            }
+        }
+        .artista6{
+            background-image: url(../img/artista-6.webp);
+            display: flex;
+            align-items: flex-end;
+            p{
+                @extend %font;
+                background-color: rgba(18, 17, 18, 0.70);
+                color: white;
+                padding: 5px;
+                border-radius: 10px;
+            }
+        }
+        .artista7{
+            background-image: url(../img/artista-7.webp);
+            display: flex;
+            align-items: flex-end;
+            p{
+                @extend %font;
+                background-color: rgba(18, 17, 18, 0.70);
+                color: white;
+                padding: 5px;
+                border-radius: 10px;
+            }
+        }
+        .artista8{
+            background-image: url(../img/artista-8.webp);
+            display: flex;
+            align-items: flex-end;
+            p{
+                @extend %font;
+                background-color: rgba(18, 17, 18, 0.70);
+                color: white;
+                padding: 5px;
+                border-radius: 10px;
+            }
+        }
+        .artista9{
+            background-image: url(../img/artista-9.webp);
+            display: flex;
+            align-items: flex-end;
+            p{
+                @extend %font;
+                background-color: rgba(18, 17, 18, 0.70);
+                color: white;
+                padding: 5px;
+                border-radius: 10px;
+            }
+        }
+        .artista10{
+            background-image: url(../img/artista-10.webp);
+            display: flex;
+            align-items: flex-end;
+            p{
+                @extend %font;
+                background-color: rgba(18, 17, 18, 0.70);
+                color: white;
+                padding: 5px;
+                border-radius: 10px;
+            }
+        }
+        .artista11{
+            background-image: url(../img/artista-11.webp);
+            display: flex;
+            align-items: flex-end;
+            p{
+                @extend %font;
+                background-color: rgba(18, 17, 18, 0.70);
+                color: white;
+                padding: 5px;
+                border-radius: 10px;
+            }
+        }
+        .artista12{
+            background-image: url(../img/artista-12.webp);
+            display: flex;
+            align-items: flex-end;
+            p{
+                @extend %font;
+                background-color: rgba(18, 17, 18, 0.70);
+                color: white;
+                padding: 5px;
+                border-radius: 10px;
+            }
+        }
+        .artista13{
+            background-image: url(../img/artista-13.webp);
+            display: flex;
+            align-items: flex-end;
+            p{
+                @extend %font;
+                background-color: rgba(18, 17, 18, 0.70);
+                color: white;
+                padding: 5px;
+                border-radius: 10px;
+            }
+        }
+        .artista14{
+            background-image: url(../img/artista-14.webp);
+            display: flex;
+            align-items: flex-end;
+            p{
+                @extend %font;
+                background-color: rgba(18, 17, 18, 0.70);
+                color: white;
+                padding: 5px;
+                border-radius: 10px;
+            }
+        }
+        .artista15{
+            background-image: url(../img/artista-15.webp);
+            display: flex;
+            align-items: flex-end;
+            p{
+                @extend %font;
+                background-color: rgba(18, 17, 18, 0.70);
+                color: white;
+                padding: 5px;
+                border-radius: 10px;
+            }
+        }
+    }
+}

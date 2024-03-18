@@ -1,0 +1,21 @@
+.quienes-somos{
+    .quienes-titulo{
+        width: 100%;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        h2{
+            @extend %font;
+        }
+    }
+    .quienes-texto{
+        @extend %font;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 15px;
+        p{
+            padding: 10px;
+        }
+    }
+}

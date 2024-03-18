@@ -1,0 +1,824 @@
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+:root {
+  --animate-duration: 3s;
+  --animate-delay: 0.9s;
+}
+
+.m-expo .s-expo .expo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.m-subasta .s-subasta .s-img a, .m-subasta .s-subasta .s-img p, .m-subasta div h2, .catalogo .s-catalogo .img-10 p, .catalogo .s-catalogo .img-9 p, .catalogo .s-catalogo .img-8 p, .catalogo .s-catalogo .img-7 p, .catalogo .s-catalogo .img-6 p, .catalogo .s-catalogo .img-5 p, .catalogo .s-catalogo .img-4 p, .catalogo .s-catalogo .img-3 p, .catalogo .s-catalogo .img-2 p, .catalogo .s-catalogo .img-1 p, .catalogo .cat-titulo h2, .m-expo .s-expo .expo-barra .texto-expo, .m-artistas .c-artistas .artista15 p, .m-artistas .c-artistas .artista14 p, .m-artistas .c-artistas .artista13 p, .m-artistas .c-artistas .artista12 p, .m-artistas .c-artistas .artista11 p, .m-artistas .c-artistas .artista10 p, .m-artistas .c-artistas .artista9 p, .m-artistas .c-artistas .artista8 p, .m-artistas .c-artistas .artista7 p, .m-artistas .c-artistas .artista6 p, .m-artistas .c-artistas .artista5 p, .m-artistas .c-artistas .artista4 p, .m-artistas .c-artistas .artista3 p, .m-artistas .c-artistas .artista2 p, .m-artistas .c-artistas .artista1 p, .quienes-somos .quienes-texto, .quienes-somos .quienes-titulo h2, .contacto .redes, .contacto .barra-contacto p, .index .fotos .horarios, .index .subasta-index .datos-subasta p, .index .barra p, header .menu nav ul li {
+  font-family: "Raleway", sans-serif;
+}
+
+header {
+  background-color: rgb(0, 0, 0);
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .logo h1 {
+  font-family: "Great Vibes", cursive;
+  padding: 10px;
+}
+header .logo h1 a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+header .menu {
+  padding: 5px;
+}
+header .menu nav ul li {
+  list-style: none;
+}
+header .menu nav ul li a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+header .menu nav ul li a:hover {
+  color: rgb(71, 157, 255);
+}
+
+/* medias */
+@media only screen and (min-width: 768px) {
+  .menu nav ul li {
+    display: inline-block;
+    padding: 0px 10px;
+  }
+}
+.index {
+  background-color: rgb(0, 0, 0);
+}
+.index .nuit {
+  width: 100%;
+  max-height: 640px;
+}
+.index .nuit img {
+  width: 100%;
+  object-fit: cover;
+}
+.index .barra {
+  width: 100%;
+  padding: 5px;
+  background-color: white;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.index .subasta-index {
+  background-color: rgb(230, 230, 230);
+  width: 100%;
+  padding: 5px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.index .subasta-index .datos-subasta {
+  width: 100%;
+}
+.index .subasta-index .datos-subasta p {
+  padding: 5px;
+}
+.index .subasta-index .datos-subasta p span {
+  font-weight: bold;
+}
+.index .subasta-index .datos-subasta hr {
+  width: 100%;
+}
+.index .subasta-index .datos-subasta button {
+  display: inline-block;
+  outline: 0;
+  appearance: none;
+  padding: 0px 12px;
+  border-radius: 4px;
+  text-decoration: none;
+  cursor: pointer;
+  background-color: rgb(249, 251, 250);
+  border: 1px solid rgb(137, 151, 155);
+  box-shadow: rgba(6, 22, 33, 0.3) 0px 1px 2px;
+  color: rgb(61, 79, 88);
+  font-size: 14px;
+  font-weight: 400;
+  height: 30px;
+  transition: all 150ms ease-in-out 0s;
+}
+.index .subasta-index .datos-subasta button a {
+  text-decoration: none;
+  color: black;
+}
+.index .subasta-index .datos-subasta button:hover {
+  color: rgb(61, 79, 88);
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(93, 108, 116);
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 4px, rgb(231, 238, 236) 0px 0px 0px 3px;
+}
+.index .fotos .foto-principal img {
+  width: 100%;
+}
+.index .fotos .horarios {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100px;
+  border: 2px solid black;
+  border-radius: 3px;
+  background-color: white;
+}
+.index .fotos .horarios ul .titulo-horario {
+  list-style: none;
+  padding-bottom: 10px;
+  font-weight: bold;
+}
+.index .fotos .lista-fotos {
+  display: flex;
+  width: 100%;
+}
+.index .fotos .lista-fotos .c-foto-2 {
+  display: flex;
+  width: 50%;
+  height: 200px;
+  background-image: url(../img/foto-2.webp);
+  background-position: center;
+  background-size: cover;
+}
+.index .fotos .lista-fotos .c-foto-3 {
+  display: flex;
+  width: 50%;
+  height: 200px;
+  background-image: url(../img/foto-3.webp);
+  background-position: center;
+  background-size: cover;
+}
+
+.contacto .barra-contacto {
+  height: 130px;
+  width: 100%;
+  background-color: rgb(230, 230, 230);
+  text-align: center;
+  padding-top: 10px;
+}
+.contacto .barra-contacto .email {
+  margin-top: 5px;
+}
+.contacto .barra-contacto .celular, .contacto .barra-contacto .correo {
+  font-weight: bold;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.contacto .mapa-contacto iframe {
+  width: 100%;
+}
+.contacto .redes {
+  color: rgb(255, 255, 255);
+  height: 70px;
+  width: 100%;
+  background-color: rgb(0, 0, 0);
+}
+.contacto .redes .enlace-redes {
+  display: flex;
+  justify-content: center;
+  letter-spacing: 10px;
+}
+.contacto .redes .enlace-redes a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  padding-top: 10px;
+  font-size: 1.5em;
+}
+.contacto .redes p {
+  text-align: center;
+  font-size: 0.9em;
+  padding-top: 5px;
+}
+
+.quienes-somos .quienes-titulo {
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.quienes-somos .quienes-texto {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 15px;
+}
+.quienes-somos .quienes-texto p {
+  padding: 10px;
+}
+
+.m-artistas .c-artistas {
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(16, 230px);
+  gap: 5px;
+  padding: 20px;
+}
+.m-artistas .c-artistas .artistas {
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 10px;
+  background-position: center;
+  background-size: cover;
+}
+.m-artistas .c-artistas .artista1 {
+  background-image: url(../img/artista-1.webp);
+  display: flex;
+  align-items: flex-end;
+}
+.m-artistas .c-artistas .artista1 p {
+  background-color: rgba(18, 17, 18, 0.7);
+  color: white;
+  padding: 5px;
+  border-radius: 10px;
+}
+.m-artistas .c-artistas .artista2 {
+  background-image: url(../img/artista-2.webp);
+  display: flex;
+  align-items: flex-end;
+}
+.m-artistas .c-artistas .artista2 p {
+  background-color: rgba(18, 17, 18, 0.7);
+  color: white;
+  padding: 5px;
+  border-radius: 10px;
+}
+.m-artistas .c-artistas .artista3 {
+  background-image: url(../img/artista-3.webp);
+  display: flex;
+  align-items: flex-end;
+}
+.m-artistas .c-artistas .artista3 p {
+  background-color: rgba(18, 17, 18, 0.7);
+  color: white;
+  padding: 5px;
+  border-radius: 10px;
+}
+.m-artistas .c-artistas .artista4 {
+  background-image: url(../img/artista-4.webp);
+  display: flex;
+  align-items: flex-end;
+}
+.m-artistas .c-artistas .artista4 p {
+  background-color: rgba(18, 17, 18, 0.7);
+  color: white;
+  padding: 5px;
+  border-radius: 10px;
+}
+.m-artistas .c-artistas .artista5 {
+  background-image: url(../img/artista-5.webp);
+  display: flex;
+  align-items: flex-end;
+}
+.m-artistas .c-artistas .artista5 p {
+  background-color: rgba(18, 17, 18, 0.7);
+  color: white;
+  padding: 5px;
+  border-radius: 10px;
+}
+.m-artistas .c-artistas .artista6 {
+  background-image: url(../img/artista-6.webp);
+  display: flex;
+  align-items: flex-end;
+}
+.m-artistas .c-artistas .artista6 p {
+  background-color: rgba(18, 17, 18, 0.7);
+  color: white;
+  padding: 5px;
+  border-radius: 10px;
+}
+.m-artistas .c-artistas .artista7 {
+  background-image: url(../img/artista-7.webp);
+  display: flex;
+  align-items: flex-end;
+}
+.m-artistas .c-artistas .artista7 p {
+  background-color: rgba(18, 17, 18, 0.7);
+  color: white;
+  padding: 5px;
+  border-radius: 10px;
+}
+.m-artistas .c-artistas .artista8 {
+  background-image: url(../img/artista-8.webp);
+  display: flex;
+  align-items: flex-end;
+}
+.m-artistas .c-artistas .artista8 p {
+  background-color: rgba(18, 17, 18, 0.7);
+  color: white;
+  padding: 5px;
+  border-radius: 10px;
+}
+.m-artistas .c-artistas .artista9 {
+  background-image: url(../img/artista-9.webp);
+  display: flex;
+  align-items: flex-end;
+}
+.m-artistas .c-artistas .artista9 p {
+  background-color: rgba(18, 17, 18, 0.7);
+  color: white;
+  padding: 5px;
+  border-radius: 10px;
+}
+.m-artistas .c-artistas .artista10 {
+  background-image: url(../img/artista-10.webp);
+  display: flex;
+  align-items: flex-end;
+}
+.m-artistas .c-artistas .artista10 p {
+  background-color: rgba(18, 17, 18, 0.7);
+  color: white;
+  padding: 5px;
+  border-radius: 10px;
+}
+.m-artistas .c-artistas .artista11 {
+  background-image: url(../img/artista-11.webp);
+  display: flex;
+  align-items: flex-end;
+}
+.m-artistas .c-artistas .artista11 p {
+  background-color: rgba(18, 17, 18, 0.7);
+  color: white;
+  padding: 5px;
+  border-radius: 10px;
+}
+.m-artistas .c-artistas .artista12 {
+  background-image: url(../img/artista-12.webp);
+  display: flex;
+  align-items: flex-end;
+}
+.m-artistas .c-artistas .artista12 p {
+  background-color: rgba(18, 17, 18, 0.7);
+  color: white;
+  padding: 5px;
+  border-radius: 10px;
+}
+.m-artistas .c-artistas .artista13 {
+  background-image: url(../img/artista-13.webp);
+  display: flex;
+  align-items: flex-end;
+}
+.m-artistas .c-artistas .artista13 p {
+  background-color: rgba(18, 17, 18, 0.7);
+  color: white;
+  padding: 5px;
+  border-radius: 10px;
+}
+.m-artistas .c-artistas .artista14 {
+  background-image: url(../img/artista-14.webp);
+  display: flex;
+  align-items: flex-end;
+}
+.m-artistas .c-artistas .artista14 p {
+  background-color: rgba(18, 17, 18, 0.7);
+  color: white;
+  padding: 5px;
+  border-radius: 10px;
+}
+.m-artistas .c-artistas .artista15 {
+  background-image: url(../img/artista-15.webp);
+  display: flex;
+  align-items: flex-end;
+}
+.m-artistas .c-artistas .artista15 p {
+  background-color: rgba(18, 17, 18, 0.7);
+  color: white;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.m-expo .s-expo {
+  width: 100%;
+  height: 100%;
+  padding-top: 20px;
+}
+.m-expo .s-expo .expo-barra {
+  width: 100%;
+  height: 100px;
+  border: 2px solid black;
+  background-image: url(../img/expo-1.webp);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.m-expo .s-expo .expo-barra .texto-expo {
+  background-color: rgba(194, 189, 192, 0.72);
+  font-weight: bold;
+  font-size: 1.4em;
+}
+.m-expo .s-expo .expo-barra button {
+  min-width: 130px;
+  height: 40px;
+  color: #fff;
+  padding: 5px 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  border-radius: 5px;
+  border: none;
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5), 7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  background: #adb5bd;
+}
+.m-expo .s-expo .expo-barra button:hover {
+  background-color: #ced4da;
+}
+.m-expo .s-expo .expo-barra button a {
+  color: white;
+  text-decoration: none;
+}
+.m-expo .s-expo .expo {
+  width: 100%;
+  display: flex;
+  padding: 20px 0px;
+}
+.m-expo .s-expo .expo .expo-actual {
+  width: 300px;
+  height: 500px;
+  border: 2px solid black;
+  border-radius: 5px;
+  background-image: url(../img/expo-2.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.catalogo {
+  width: 100%;
+  height: auto;
+}
+.catalogo .cat-titulo {
+  background-color: rgba(206, 202, 205, 0.8);
+  padding: 20px;
+}
+.catalogo .cat-titulo h2 {
+  text-align: center;
+}
+.catalogo .s-catalogo {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(10, 350px);
+  gap: 2px;
+  padding: 5px;
+  padding-top: 30px;
+}
+.catalogo .s-catalogo .cat {
+  border: 4px solid rgb(255, 255, 255);
+  border-radius: 10px;
+  background-position: center;
+  background-size: cover;
+}
+.catalogo .s-catalogo .img-1 {
+  background-image: url(../img/cat-1.webp);
+  display: flex;
+  align-items: flex-end;
+}
+.catalogo .s-catalogo .img-1 p {
+  background-color: rgba(105, 105, 105, 0.322);
+  padding: 5px;
+  border: 2px solid rgba(235, 233, 234, 0.322);
+  border-radius: 5px;
+  font-size: 1.1em;
+  font-weight: bold;
+}
+.catalogo .s-catalogo .img-2 {
+  background-image: url(../img/cat-2.webp);
+  display: flex;
+  align-items: flex-end;
+}
+.catalogo .s-catalogo .img-2 p {
+  background-color: rgba(235, 233, 234, 0.322);
+  padding: 5px;
+  border: 2px solid rgba(235, 233, 234, 0.322);
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+.catalogo .s-catalogo .img-3 {
+  background-image: url(../img/cat-3.webp);
+  display: flex;
+  align-items: flex-end;
+}
+.catalogo .s-catalogo .img-3 p {
+  background-color: rgba(235, 233, 234, 0.322);
+  padding: 5px;
+  border: 2px solid rgba(235, 233, 234, 0.322);
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+.catalogo .s-catalogo .img-4 {
+  background-image: url(../img/cat-4.webp);
+  display: flex;
+  align-items: flex-end;
+}
+.catalogo .s-catalogo .img-4 p {
+  background-color: rgba(235, 233, 234, 0.322);
+  padding: 5px;
+  border: 2px solid rgba(235, 233, 234, 0.322);
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+.catalogo .s-catalogo .img-5 {
+  background-image: url(../img/cat-5.webp);
+  display: flex;
+  align-items: flex-end;
+}
+.catalogo .s-catalogo .img-5 p {
+  background-color: rgba(235, 233, 234, 0.322);
+  padding: 5px;
+  border: 2px solid rgba(235, 233, 234, 0.322);
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+.catalogo .s-catalogo .img-6 {
+  background-image: url(../img/cat-6.webp);
+  display: flex;
+  align-items: flex-end;
+}
+.catalogo .s-catalogo .img-6 p {
+  background-color: rgba(235, 233, 234, 0.322);
+  padding: 5px;
+  border: 2px solid rgba(235, 233, 234, 0.322);
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+.catalogo .s-catalogo .img-7 {
+  background-image: url(../img/cat-7.webp);
+  display: flex;
+  align-items: flex-end;
+}
+.catalogo .s-catalogo .img-7 p {
+  background-color: rgba(235, 233, 234, 0.322);
+  padding: 5px;
+  border: 2px solid rgba(235, 233, 234, 0.322);
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+.catalogo .s-catalogo .img-8 {
+  background-image: url(../img/cat-8.webp);
+  display: flex;
+  align-items: flex-end;
+}
+.catalogo .s-catalogo .img-8 p {
+  background-color: rgba(235, 233, 234, 0.322);
+  padding: 5px;
+  border: 2px solid rgba(235, 233, 234, 0.322);
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+.catalogo .s-catalogo .img-9 {
+  background-image: url(../img/cat-9.webp);
+  display: flex;
+  align-items: flex-end;
+}
+.catalogo .s-catalogo .img-9 p {
+  background-color: rgba(235, 233, 234, 0.322);
+  padding: 5px;
+  border: 2px solid rgba(235, 233, 234, 0.322);
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+.catalogo .s-catalogo .img-10 {
+  background-image: url(../img/cat-10.webp);
+  display: flex;
+  align-items: flex-end;
+}
+.catalogo .s-catalogo .img-10 p {
+  background-color: rgba(235, 233, 234, 0.322);
+  padding: 5px;
+  border: 2px solid rgba(235, 233, 234, 0.322);
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+.m-subasta div {
+  padding: 15px;
+  background-color: rgba(141, 139, 139, 0.5);
+}
+.m-subasta div h2 {
+  text-align: center;
+}
+.m-subasta .s-subasta {
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(10, 350px);
+  padding-top: 30px;
+}
+.m-subasta .s-subasta .s-img {
+  border: 2px solid black;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px 0px rgba(78, 78, 78, 0.75);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  background-color: rgba(171, 171, 171, 0.7);
+}
+.m-subasta .s-subasta .s-img .sub-img1 {
+  background-image: url(../img/sub-1.webp);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 320px;
+}
+.m-subasta .s-subasta .s-img .sub-img2 {
+  background-image: url(../img/sub-2.webp);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 320px;
+}
+.m-subasta .s-subasta .s-img .sub-img3 {
+  background-image: url(../img/sub-3.webp);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 320px;
+}
+.m-subasta .s-subasta .s-img .sub-img4 {
+  background-image: url(../img/sub-4.webp);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 320px;
+}
+.m-subasta .s-subasta .s-img .sub-img5 {
+  background-image: url(../img/sub-5.webp);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 320px;
+}
+.m-subasta .s-subasta .s-img .sub-img6 {
+  background-image: url(../img/sub-6.webp);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 320px;
+}
+.m-subasta .s-subasta .s-img .sub-img7 {
+  background-image: url(../img/sub-7.webp);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 320px;
+}
+.m-subasta .s-subasta .s-img .sub-img8 {
+  background-image: url(../img/sub-8.webp);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 320px;
+}
+.m-subasta .s-subasta .s-img .sub-img9 {
+  background-image: url(../img/sub-9.webp);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 320px;
+}
+.m-subasta .s-subasta .s-img .sub-img10 {
+  background-image: url(../img/sub-10.webp);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 320px;
+}
+.m-subasta .s-subasta .s-img p {
+  font-weight: bold;
+}
+.m-subasta .s-subasta .s-img a {
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+}
+.m-subasta .s-subasta .s-img a:hover {
+  color: rgb(71, 157, 255);
+}
+
+@media only screen and (min-width: 321px) {
+  .barra {
+    height: 70px;
+  }
+  .subasta-index {
+    text-align: center;
+  }
+}
+@media only screen and (min-width: 666px) {
+  .barra {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5em;
+  }
+  .barra p {
+    padding: 20px;
+  }
+  .subasta-index {
+    height: 150px;
+  }
+}
+@media only screen and (min-width: 480px) {
+  .m-artistas .c-artistas {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(5, 230px);
+  }
+}
+@media only screen and (min-width: 768px) {
+  .m-artistas .c-artistas {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(5, 300px);
+  }
+}
+@media only screen and (min-width: 900px) {
+  .m-artistas .c-artistas {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(5, 500px);
+  }
+}
+@media only screen and (min-width: 480px) {
+  .catalogo .s-catalogo {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(5, 400px);
+  }
+}
+@media only screen and (min-width: 768px) {
+  .catalogo .s-catalogo {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(5, 600px);
+  }
+}
+@media only screen and (min-width: 900px) {
+  .catalogo .s-catalogo {
+    grid-template-columns: 600px 600px;
+    grid-template-rows: repeat(5, 800px);
+    justify-content: center;
+  }
+}
+@media only screen and (min-width: 480px) {
+  .m-subasta .s-subasta {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(5, 400px);
+    padding: 5px;
+    gap: 10px;
+  }
+  .m-subasta .s-subasta .s-img .sub-img {
+    height: 340px;
+  }
+}
+@media only screen and (min-width: 900px) {
+  .m-subasta .s-subasta {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(5, 600px);
+    padding: 5px;
+    gap: 10px;
+  }
+  .m-subasta .s-subasta .s-img .sub-img {
+    height: 560px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .m-subasta .s-subasta {
+    display: grid;
+    grid-template-columns: 450px 450px;
+    grid-template-rows: repeat(5, 600px);
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    gap: 20px;
+  }
+  .m-subasta .s-subasta .s-img .sub-img {
+    height: 560px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
