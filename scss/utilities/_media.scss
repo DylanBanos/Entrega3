@@ -130,3 +130,13 @@
         }
     }
 }
+
+@media only screen and (min-width:480px){
+    .contacto{
+        .barra-contacto{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+    }
+}
